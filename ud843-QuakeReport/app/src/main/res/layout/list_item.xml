@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    >
+    <TextView
+        android:layout_width="36dp"
+
+        android:layout_gravity="center_vertical"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_height="36dp"
+        android:id="@+id/mag"
+        android:textSize="16sp"
+
+        tools:text="7.2"
+        android:background="@drawable/magnitude_circle"
+       />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:id="@+id/offset_place"
+            tools:text="San Francisco"
+            android:ellipsize="end"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:fontFamily="sans-serif-medium"
+            />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:id="@+id/primary_place"
+        tools:text="San Francisco"
+        android:textSize="16sp"
+            android:textColor="@color/textColorEarthquakeLocation"
+            android:maxLines="2"
+            android:ellipsize="end"
+        />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:id="@+id/date"
+            tools:text="Feb 2,2016"
+            android:textSize="12sp"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:layout_gravity="end"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:id="@+id/time"
+            tools:text="05:00pm"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
